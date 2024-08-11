@@ -836,6 +836,10 @@ button.active {
     padding-bottom: 20px; 
 }
 
+.aboutSection h3 {
+    padding-top: 40px; 
+}
+
 .about {
     background-color: white;
     padding-top: 40px; 
@@ -909,7 +913,7 @@ button.active {
 }
 
 .about {
-    padding-top: 140px; 
+    padding-top: 100px; 
 }
 
 @media screen and (max-width: 1350px) {
@@ -1002,6 +1006,9 @@ button.active {
         margin: 5px 0;
     }
     
+    .aboutSection h3 {
+        padding-top: 80px;
+    }
 }   
 
 @media screen and (max-width: 560px) {
@@ -1021,6 +1028,11 @@ button.active {
     .threeImages, .twoImages {
         display: flex;
         flex-wrap: wrap; /* Allows the images to wrap to the next line */
+    }
+
+    .about .twoImages img {
+        width: 98%;
+        margin: 1%;
     }
 
     section .cards .card {
