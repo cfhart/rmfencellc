@@ -1,0 +1,1055 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  #container {
+    max-width: 100%;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+    align-items: center;
+  }
+  
+  .image-gallery img {
+    max-width: 400px;
+    min-height: 350px;
+    padding: 0.5rem;
+  }
+
+  .scrolled {
+    background: white;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header.scrolled {
+    background: white; /* Change background color when scrolled */
+    color: black; /* Change text color when scrolled */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+
+.scrolled .navbar {
+    color: inherit; 
+}
+
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f2f2f2; 
+    color: #373739; 
+}
+
+.flex {
+    display: flex;
+    align-items: center; 
+
+}
+
+.container {
+    max-width: 1250px;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0 20px; 
+}
+
+header {
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 100;
+    color: white;
+    background: #465C95;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+#containerLight {
+    max-width: 100%; 
+}
+
+#container2 {
+  max-width: 100%;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.image-gallery img {
+  max-width: 400px;
+  min-height: 350px;
+  padding: 0.5rem;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: 400px;
+    margin: 8px; /* Adjust margin as needed */
+  }
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+  }
+  #prev {
+    left: 10px;
+  }
+  #next {
+    right: 10px;
+  }
+.gallery {
+    padding-top: 20px;
+}
+
+.gallery h2{
+    text-align: center; 
+    padding-top: 80px; 
+}
+
+.gallery p {
+    text-align: center; 
+}
+
+/** code for image gallery*/
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-color: black; 
+  }
+
+  .chains h2, .wood h2, .vinyl h2, .aluminum h2 {
+    text-align: center;
+  }
+
+  .vinyl {
+    padding-top: 40px; 
+  }
+
+  .vinyl p, .aluminum p {
+    text-align: center;
+  }
+
+  .aluminum {
+    padding-top: 40px; 
+  }
+
+  .chains, .wood {
+    background-color: #fff;
+    padding-top: 40px; 
+  }
+
+  .mySlides img {
+    display: block; /* Display images as block elements */
+    margin: 0 auto; /* Center the images horizontally */
+    max-width: 100%; /* Ensure images do not exceed their container width */
+    width: 100%; 
+
+  }
+  
+  .mySlides2 {
+    display: none;
+    background-color: #02431b; 
+  }
+
+  .mySlides2 img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .containerSlider {
+    position: relative; 
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 50%; 
+    align-items: center;
+    padding-bottom: 40px; 
+}
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -50px;
+    color: white;
+    padding: 10px; 
+    font-weight: bold;
+    font-size:40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 10px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev {
+    left: 10px; 
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .rowSlider:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .columnSlider {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+#lightbox {
+    position: fixed;
+    z-index: 1000; 
+    top: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, .8);
+    display: none; 
+}
+
+#lightbox.active {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+#lightbox img {
+    max-width: 90%; 
+    max-height: 80%; 
+}
+
+/** nav bar / navigation code */
+header .navbar {                                                                                                                                                                                        
+    display: flex; 
+    align-items: center; 
+    margin: 0 auto; 
+    justify-content: space-between; 
+    max-width: 1200px;
+    
+    
+}
+header.show-mobile-menu .navbar .menu-links {
+    left: 0; 
+}
+.menu-links a { 
+    font-size: 1.1rem;
+
+}
+
+.navbar .logo {
+    font-size: 1.4rem; 
+    font-weight: 600; 
+    color: inherit; 
+}
+
+.logo img {
+    height: 90px; 
+}
+
+.logo {
+    text-align: center;
+}
+
+
+.navbar .logo span {
+    color: #C63B36;
+}
+.navbar .menu-links {
+    display: flex; 
+    gap: 40px;
+    list-style: none;
+    color: inherit; 
+}
+.navbar a {
+    display: block;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 14px; 
+    
+}
+.navbar a:hover {
+    color: #C63B36;
+}
+
+/** adds padding to every section to account for the navigation menu */ 
+section {
+    scroll-margin-top: 80px;
+}
+
+/** code for the home screen */
+.homescreen-section {
+    position: relative;
+    height: 85vh;
+    width: 100%;
+    background-position: center 68%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 80px;
+}
+.homescreen-section .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    color: #C63B36;
+    text-align: center;
+    height: 60%;
+    margin-top: 70px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.homescreen-section .content p {
+    color: white;
+    -webkit-text-stroke: 1px white; /* Adds a white border to the text */
+}
+
+
+.homescreen-section .content h1 {
+    font-size: 4rem; 
+    max-width: 100%;     
+    -webkit-text-stroke: 1px white; /* Adds a white border to the text */
+
+}
+.homescreen-section .content p{
+    font-weight: 300; 
+    margin-top: 15px; 
+    max-width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+.homescreen-section .content button {
+    background: #C63B36; 
+    outline: none; 
+    border: none; 
+    font-size: 1.4rem; 
+    font-weight: 500;
+    margin-top: 38px; 
+    padding: 12px 30px; 
+    border-radius: 6px;
+    cursor: pointer; 
+    transition: 0.2s ease;
+}
+.homescreen-section .content button:hover {
+    color: #fff; 
+}
+/** code for the mobile menu (closing/opening the menu) */
+#close-menu-btn {
+    display: none; 
+    position: absolute;
+    right: 20px; 
+    top: 20px; 
+    cursor: pointer; 
+}
+#menu-btn {
+    color: #fff; 
+    cursor: pointer; 
+    display: none; 
+}
+section h2 {
+    font-size: 2rem;
+}
+
+/** code for fading background for home*/
+.background-container {
+    position: absolute; 
+    width: 100%; 
+    height: 85%; 
+    z-index: -5; 
+}
+.back {
+    padding-bottom: 40px;
+
+}
+.background {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+}
+
+.showing {
+    opacity: 1; 
+    z-index: -1; 
+    transition: none; 
+}
+
+header:before {
+    content:""; 
+    position: absolute; 
+    width: 100%; 
+    height: 100%;
+    background-color: #000; 
+    opacity: -4;
+    z-index: -1; 
+}
+
+/** code for square link stuff*/
+section .cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-decoration: none;   
+}
+
+.card h3 {
+    text-align: center;
+}
+
+
+.card  {
+    text-align: center;
+}
+
+.card button {
+    font-size: 1rem;
+    padding: 5px 15px;
+    background-color: #C63B36;
+    color: white;
+}
+
+.card p {
+    padding-top: 10px; 
+}
+
+.services a {
+    font-weight: 500; 
+}
+
+.services h3 {
+    font-size: 1.4rem; 
+}
+
+.cards a {
+    text-decoration: none;
+    color:#000; 
+}
+
+.section-title p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.twoImages {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 40px; 
+}
+
+.twoImages img {
+    width: 49%; 
+}
+
+.threeImages {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 40px; 
+ }
+ 
+ .threeImages img {
+     width: 32%; 
+ }
+
+section .card {
+    width: calc(100% / 4 - 30px);
+    list-style: none; 
+    border-radius: 5px; 
+    padding-bottom: 40px; 
+}
+section .card img {
+    margin-bottom: 20px; 
+    width: calc(100%);
+}
+
+.services {
+    padding-top: 40px; 
+    background-color: white; 
+}
+
+.container h3 {
+    font-weight: 600;
+
+}
+
+.container h1 {
+    font-weight: 600;
+    font-size: 2.5rem; 
+    text-align: center; 
+    padding-bottom: 20px; 
+}
+/** code for the drop down menu */
+.dropbtn {
+    background-color: #02431b;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px; 
+}
+
+.dropdown .dropbtn:hover {
+    color: #C06B3E;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100%; /* Minimum width matching the button */
+    z-index: 1;
+    margin-top: 8px; 
+
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.show-dropdown {
+    display:block;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+}
+.dropdown-content::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: transparent;
+}
+
+footer {
+    padding-top: 40px; 
+}
+
+.logoFooter img {
+    height: 270px; 
+    padding-bottom: 40px; 
+}
+/** footer */
+.containerFooter {
+    background-color: #465C95   ;
+    width: 100%; 
+    margin: 0 auto;
+    padding: 40px 200px; 
+    color: #fff; 
+}
+.contentFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentFooter a {
+    color: inherit; 
+    text-decoration: none;
+}
+
+.contentFooter p {
+    padding-top: 20px;
+}
+
+.footerContent {
+    text-align: left; 
+}
+
+.containerRipe .section-title {
+    padding-bottom: 20px;
+}
+.containerRipe h3 {
+    text-align: center; 
+}
+
+
+.containerRipe img {
+    display: flex;
+    max-width: 100%; 
+}
+
+.containerRipe {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-bottom: 40px;
+ }
+
+.sectionRipe {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 40px;
+}
+
+.sectionRipe p {
+    padding-bottom: 00px;
+    text-align: center;
+}
+
+.sectionRipe2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sectionRipe2 p {
+    padding-bottom: 00px;
+    text-align: center;
+}
+
+.left img{
+    margin-bottom: 20px; 
+    width: calc(80%);
+    height: auto; 
+    justify-content: center;
+}
+.left {
+    width: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+
+}
+
+.sectionRipe2 .left.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.right {
+    width: 50%;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.sectionRipe .left,
+.sectionRipe .right {
+    flex: 1;
+}
+
+.sectionRipe2 .left,
+.sectionRipe2 .right {
+    flex: 1;
+}
+
+
+/*gallery */
+.containerFirst {
+    width: 100%; 
+    margin: 0 auto;
+    padding: 0 20px; 
+    padding-bottom: 40px; 
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 40px;  
+}
+
+button {
+    padding: 10px 20px; 
+    font-size: 18px; 
+    border: none; 
+    cursor: pointer; 
+    border-radius: 6px; 
+}
+
+.filterButtons {
+    display: flex; 
+    justify-content:center ; 
+    align-items: center;
+    gap: 30px; 
+    padding-top: 40px;
+    flex-wrap: wrap; 
+}
+
+button.active {
+    background: #C63B36; 
+    color: white; 
+}
+
+.filterCards {
+    display: flex;
+    margin-top: 25px; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.cardFilter {
+    flex-basis: 300px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05); 
+    flex-grow: 1; 
+}
+
+.cardFilter img {
+    width: 100%; 
+    height: 300px; 
+    object-fit: cover;
+}
+
+.cardFilter.hide {
+    display: none; 
+}
+.cardBody {
+    padding: 15px 20px 20px; 
+}
+
+.cardTitle {
+    font-size: 20px; 
+    font-weight: 500; 
+    color: #333;
+}
+
+.cardText {
+    font-size: 18px; 
+    color: #333; 
+}
+
+/* about / mission section */
+.aboutSection {
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 20px; 
+}
+
+.about {
+    background-color: white;
+    padding-top: 40px; 
+}
+
+.missionSection {
+    text-align: left;
+}
+
+.missionSection img {
+    width: 50%; 
+}
+
+.missionSection .twoImages {
+    gap: 40px; 
+}
+
+.twoText p {
+    padding-bottom: 20px; 
+}
+
+.twoText button, .homescreen-section button {
+    font-size: 25px;
+    font-weight: 500;
+    background-color: #C63B36;
+    color: white; 
+}
+
+/* contact / consulation section */
+.textContact {
+    text-align: center;
+    padding-bottom: 20px; 
+}
+
+.icon-background {
+    color: white;
+}
+
+.contact {
+    text-align: center;
+}
+
+.consultation {
+    background-color: #DBDFED;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contactLinks .fa-phone, .contactLinks .fa-envelope {
+    font-size: 4rem;
+    padding-bottom: 20px;
+}
+
+.email-link {
+    color: black; /* Inherit the color from the parent element */
+    text-decoration: none; /* Remove the underline */
+}
+
+.contact h3 {
+    font-size: 1.5rem; 
+    padding-top: 20px; 
+}
+
+.contactLinks {
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.textContact h3 {
+    font-size: 2rem; 
+}
+
+.about {
+    padding-top: 140px; 
+}
+
+@media screen and (max-width: 1350px) {
+    .smallAbout, .products, .aboutFooter, .shopping {
+        width: 50%; /* Two columns per row */
+        padding-bottom: 40px; 
+    }
+
+    .contentFooter {
+        flex-wrap: wrap;
+        
+    }
+    .containerFooter {
+        padding: 40px 60px; 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header {
+        padding: 10px; 
+    }
+    /** nav bar scaling */
+    .navbar .menu-links {
+        position: fixed;
+        left: -260px;
+        top: 0;
+        width: 260px;
+        height: 100vh;
+        background: #fff;
+        flex-direction: column;
+        padding: 70px 40px 0;
+        transition: left 0.3s ease;
+        text-align: center;
+    }
+    .navbar a{
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .dropbtn {
+        color: black;
+    }
+
+    .navbar a {
+        color: #000; 
+    }
+    .navbr .logo {
+        font-size: 1.7rem;
+    }
+   
+    /** mobile/tablet menu */
+    #close-menu-btn, #menu-btn {
+        display: block; 
+    }
+
+    /** homescreen sclaing */
+    .homescreen-section {
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .homescreen-section .content {
+        text-align: center;
+        margin: 0 auto; 
+        padding-left: 20px; 
+        padding-right: 20px; 
+
+    }
+    .homescreen-section .content :is(h1, p) {
+        max-width: 100%;
+    }
+    .homescreen-section .content h1 {
+        font-size: 2.3rem;
+        line-height: 60px;
+    }
+    .homescreen-section .content button {
+        padding: 9px 18px; 
+    }
+
+    /** footer */
+    /** footer */
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .main-content .box{
+        margin: 5px 0;
+    }
+    
+}   
+
+@media screen and (max-width: 560px) {
+   
+    
+}
+
+@media screen and (max-width: 640px) {
+    .smallAbout, .products, .aboutFooter, .shopping {
+        width: 100%;
+        padding: 0 10px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .threeImages, .twoImages {
+        display: flex;
+        flex-wrap: wrap; /* Allows the images to wrap to the next line */
+    }
+
+    section .cards .card {
+        width: calc(100% / 2 - 15px);
+    }
+    
+}
+
+@media screen and (max-width: 800px) {
+    section .cards .card {
+        width: 100%;
+      }
+
+      .threeImages img, .twoImages img {
+        width: 98%; /* Makes the images full width on smaller screens */
+        margin: 1%; /* Adds space around the image */
+    }                           
+
+      .image-container {
+        flex-direction: column; /* Stack images in a single column */
+        align-items: center; /* Center images horizontally */
+      }
+    
+      .smallAbout, .products, .aboutFooter, .shopping {
+        padding-left: 15px;
+    }
+
+      .image-container img {
+        flex: 100%; /* Two images per row */
+        height: auto; 
+      }
+}

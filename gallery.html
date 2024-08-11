@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>    
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar container" id="menu-links">
+                <a href="index.html#" class="logo"><img src="images/logoGood.jpg"><span></span></a>
+                <ul class="menu-links flex">
+                    <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                    <li><a href="index.html#">Home</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn">Services <span class="fas fa-caret-down" style="font-size: 20px;"></span></button>
+                        <div class="dropdown-content">       
+                            <a href="index.html#vinyl">Vinyl</a>
+                            <a href="index.html#chains">Chain Link</a>    
+                            <a href="index.html#wood">Wood</a>    
+                            <a href="index.html#aluminum">Aluminum</a>    
+
+                        </div>
+                    </div></li>
+                    <li><a href="gallery.html#">Gallery</a></li>
+                    <li><a href="index.html#">Contact</a></li>
+                    <li><a href="index.html#">About</a></li>
+                </ul>
+                <span id="menu-btn" class="material-symbols-outlined">menu</span>
+            </nav>
+        </header>
+        
+        <section class="portfolio" id="portfolio">
+            <div class="containerFirst">
+                <div class="filterButtons">
+                    <button class="active" data-name="all">Show all</button>
+                    <button data-name="woods">Wood</button>
+                    <button data-name="aluminums">Aluminum</button>
+                    <button data-name="vinyls">Vinyl</button>
+                    <button data-name="chains">Chain Link</button>
+                </div>
+                <div class="filterCards">
+                    <div class="cardFilter" data-names="woods">
+                        <img src="images/fences/aluminum/aluminum.jpg" alt="woods" />
+                        <div class="cardBody">
+                            <h6 class="cardTitle">Wood</h6>
+                            <p class="cardText">text</p>
+                        </div>
+                    </div>
+        
+                    <div class="cardFilter" data-names="vinyls">
+                        <img src="images/fences/aluminum/aluminum.jpg" alt="vinyl" />
+                        <div class="cardBody">
+                            <h6 class="cardTitle">Phone</h6>
+                            <p class="cardText">text</p>
+                        </div>
+                    </div>
+
+                    <div class="cardFilter" data-names="chains">
+                        <img src="images/fences/aluminum/aluminum.jpg" alt="chain" />
+                        <div class="cardBody">
+                            <h6 class="cardTitle">Phone</h6>
+                            <p class="cardText">text</p>
+                        </div>
+                    </div>
+
+                    <div class="cardFilter" data-names="aluminums">
+                        <img src="images/fences/aluminum/aluminum.jpg" alt="aluminum" />
+                        <div class="cardBody">
+                            <h6 class="cardTitle">Phone</h6>
+                            <p class="cardText">text</p>
+                        </div>
+                    </div>
+
+                    <div class="cardFilter" data-names="phones">
+                        <img src="images/fences/aluminum/aluminum.jpg" alt="" />
+                        <div class="cardBody">
+                            <h6 class="cardTitle">Phone</h6>
+                            <p class="cardText">text</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </body>
+    <footer>
+        <div class="containerFooter">
+            <div class="contentFooter">
+                <div class="logoFooter">
+                    <img src="images/logoGood.jpg">
+                </div>
+                <div class="smallAbout">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-phone"></i> (704) 560-4554</p>
+                    <p><i class="fas fa-map-marker-alt"></i> not known yet</p>
+
+                </div>
+                <div class="products">
+                    <h4>Services</h4>
+                    <p><a href="index.html#services">Wood</a></p>
+                    <p><a href="index.html#tea">Vinyl</a></p>
+                    <p><a href="index.html#tea">Aluminum</a></p>
+                    <p><a href="index.html#tea">Chain Link</a></p>
+                </div>
+                <div class="aboutFooter">
+                    <h4>About Us</h4>
+                    <p><a href="about.html#about">Our Story</a></p>
+                    <p><a href="pricing.html#questions">FAQ</a></p>
+                    <p><a href="pricing.html#questions">Portfolio</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <script src="scriptGallery.js"></script>
+</html>
