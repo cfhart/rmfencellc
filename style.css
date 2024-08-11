@@ -543,6 +543,7 @@ section .cards {
     width: 49%; 
 }
 
+
 .threeImages {
     display: flex;
     justify-content: space-between;
@@ -1029,6 +1030,14 @@ button.active {
         display: flex;
         flex-wrap: wrap; /* Allows the images to wrap to the next line */
     }
+
+    .about .twoImages img {
+        order: 1; /* Image appears first */
+      }
+    
+      .about .twoText {
+        order: 2; /* Text appears second */
+      }
 
     .about .twoImages img {
         width: 98%;
